@@ -14,7 +14,7 @@ namespace ComunicacionPS
 {
     public partial class Form1 : Form
     {
-
+        Datos data= new Datos();
         public Form1()
         {
             InitializeComponent();
@@ -75,6 +75,7 @@ namespace ComunicacionPS
                 this.Invoke(new MethodInvoker(delegate ()
                 {
                     rchRecibido.Text += datos;
+                    data.GuardarDatos(datos);
                 }));
             }
             catch (Exception ex)
@@ -110,5 +111,7 @@ namespace ComunicacionPS
                 btnEnviar.Enabled = false;
             }
         }
+
+        
     }
 }
