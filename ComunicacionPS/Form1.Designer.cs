@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.serialPortArduino = new System.IO.Ports.SerialPort(this.components);
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnPrueba = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbPuerto
@@ -127,11 +128,22 @@
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // btnPrueba
+            // 
+            this.btnPrueba.Location = new System.Drawing.Point(299, 459);
+            this.btnPrueba.Name = "btnPrueba";
+            this.btnPrueba.Size = new System.Drawing.Size(159, 52);
+            this.btnPrueba.TabIndex = 9;
+            this.btnPrueba.Text = "Prueba";
+            this.btnPrueba.UseVisualStyleBackColor = true;
+            this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 523);
+            this.Controls.Add(this.btnPrueba);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Label label3;
         private System.IO.Ports.SerialPort serialPortArduino;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnPrueba;
     }
 }
 

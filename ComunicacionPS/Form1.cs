@@ -112,6 +112,17 @@ namespace ComunicacionPS
             }
         }
 
-        
+        private void btnPrueba_Click(object sender, EventArgs e)
+        {
+            bool f=data.GuardarDatos("20.00");
+            if (f == true)
+            {
+                MessageBox.Show("Guardado Exitoso");
+
+            }
+            else
+                MessageBox.Show("Error");
+
+        }
     }
 }
